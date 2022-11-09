@@ -3,7 +3,9 @@
 :root {
     /*cores primarias*/
     --cyan: hsl(179, 62%, 43%);
+    --cyan-light: hsl(179, 68%, 55%);
     --bright-yellow: hsl(71, 73%, 54%);
+    --white: #fafafa;
 
     /*Neutras*/
     --light-gray: hsl(204, 43%, 93%); 
@@ -26,4 +28,83 @@
 body{
     font-size: 16px;
     font-family: var(--fonte-principal);
+    width: 100%;
+    max-width: 1440px;
+    min-width: 768px;
+    height: 100vh;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--light-gray);
+}
+
+/*GRID CONTAINER*/
+
+.grid-container {
+    width: 832px;
+    max-width:965px;
+    min-width: 800px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "community community" 
+        "subscription whyus"
+    ;
+    justify-content:center;
+}
+
+/*COMMUNITY*/
+.community {
+    grid-area: community;
+    
+    background-color: var(--white);
+    border-radius: 10px 10px 0 0 ;
+    padding: 50px ;
+
+}
+
+.community__title{
+    color: var(--cyan);
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: 35px;
+}
+
+.community__guarantee{
+    color: var(--bright-yellow);
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: 22px;
+
+}
+
+.community__description{
+    color: var(--grayish-blue);
+    font-weight: 400;
+    font-size: 1.3em;
+    line-height: 1.8;
+    
+}
+
+/*  SUBSCRIPTION*/
+
+.subscription {
+    grid-area: subscription;
+    background-color: var(--cyan);
+    border-radius: 0 0 0 10px;
+    padding: 50px ;
+}
+
+/*WHY US*/
+
+.whyus {
+    grid-area: whyus;
+    background-color: var(--cyan-light);
+    border-radius: 0 0 10px 0;
+    padding: 50px ;
 }
