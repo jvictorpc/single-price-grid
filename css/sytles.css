@@ -98,7 +98,52 @@ body{
     background-color: var(--cyan);
     border-radius: 0 0 0 10px;
     padding: 50px ;
+    color: var(--white);
 }
+
+.subscription__title{
+    font-weight: 700;
+    font-size: 1.4em;
+    margin-bottom: 25px;
+}
+
+.subscription__price{
+    font-size: 2.2em;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.subscription__price span{
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.5); 
+}
+
+.subscription__text {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: var(--light-gray);
+    margin-bottom: 30px;
+}
+
+.subscription__button{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: 0 auto;
+    padding: 20px 0 ;
+    background-color: var(--bright-yellow);
+
+    border-radius: 5px;
+
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .4);
+}
+
 
 /*WHY US*/
 
@@ -107,4 +152,19 @@ body{
     background-color: var(--cyan-light);
     border-radius: 0 0 10px 0;
     padding: 50px ;
+    color: var(--white);
+}
+
+.whyus__title{
+    font-size: 1.4em;
+    font-weight: 700;
+
+    margin-bottom: 25px;
+}
+
+.whyus__description {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
 }
